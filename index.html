@@ -1,0 +1,132 @@
+<!--
+  Build a Technical Documentation Page
+Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
+
+User Stories:
+
+You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+The .main-section elements should contain at least ten p elements total (not each)
+The .main-section elements should contain at least five code elements total (not each)
+The .main-section elements should contain at least five li items total (not each)
+You can see a nav element with a corresponding id="navbar"
+The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+The header element in the #navbar must come before any link (a) elements in the navbar
+Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+Your technical documentation should use at least one media query
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#codez_html">codez_html</a></li> 
+        <li><a class="nav-link" href="#codez_css">codez_css</a></li>
+        <li><a class="nav-link" href="#codez_cpp">codez_cpp</a></li>
+        <li><a class="nav-link" href="#codez_python">codez_python</a></li>
+        <li><a class="nav-link" href="#codez_c">codez_c</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="codez_html" class="main-section">
+        <header>codez_html</header>
+        <ul>
+          <li>
+            Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, est le langage de balisage conçu pour représenter les pages web.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+          <li>
+            Il est souvent utilisé conjointement avec le langage de programmation JavaScript et des feuilles de style en cascade (CSS). HTML est inspiré du Standard Generalized Markup Language (SGML). Il s'agit d'un format ouvert.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+        </ul>
+        <code>
+          <p>Voici un code</p>
+        </code>
+      </section>
+      <section id="codez_css" class="main-section">
+        <header>codez_css</header>
+        <ul>
+          <li>
+            Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+          <li>
+            Le terme CSS est l'acronyme anglais de Cascading Style Sheets qui peut se traduire par "feuilles de style en cascade". Le CSS est un langage informatique utilisé sur l'internet pour mettre en forme les fichiers HTML ou XML. Ainsi, les feuilles de style, aussi appelé les fichiers CSS, comprennent du code qui permet de gérer le design d'une page en HTML.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+          <code>
+            h{
+              font-size:15px;
+            }
+          </code>
+        </ul>
+      </section>
+      <section id="codez_cpp" class="main-section">
+        <header>codez_cpp</header>
+        <ul>
+          <li>
+            C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes, dont la programmation procédurale, la programmation orientée objet et la programmation générique. Ses bonnes performances, et sa compatibilité avec le C en font un des langages de programmation les plus utilisés dans les applications où la performance est critique.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+          <li>
+            En langage C, ++ est l'opérateur d'incrémentation, c'est-à-dire l'augmentation de la valeur d'une variable de 1. C'est pourquoi C++ porte ce nom : cela signifie que C++ est un niveau au-dessus de C.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+        </ul>
+        <code>cout<<"Hello world";</code>
+      </section>
+      <section id="codez_python" class="main-section">
+        <header>codez_python</header>
+        <ul>
+          <li>
+            Python est un langage de programmation interprété, multiparadigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl. 
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+          <li>
+            Le langage Python est placé sous une licence libre proche de la licence BSD5 et fonctionne sur la plupart des plateformes informatiques, des smartphones aux ordinateurs centraux6, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+        </ul>
+        <code>print("Hello world")</code>
+      </section>
+      <section id="codez_c" class="main-section">
+        <header>codez_c</header>
+        <ul>
+          <li>
+            Le langage de programmation C est impératif, généraliste et de bas niveau. Inventé au début des années 1970 pour réécrire Unix, C est devenu un des langages les plus utilisés, encore de nos jours. De nombreux langages plus modernes comme C++, C#, Java et PHP ou JavaScript ont repris une syntaxe similaire au C et reprennent en partie sa logique
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+          <li>
+            C offre au développeur une marge de contrôle importante sur la machine (notamment sur la gestion de la mémoire) et est de ce fait utilisé pour réaliser les « fondations » (compilateurs, interpréteurs…) de ces langages plus modernes.
+          </li>
+          <p>Ensemble des activités liées à la définition, l'écriture, la mise au point et l'exécution de programmes informatiques ; séquence des ordres auxquels doit obéir un dispositif.</p>
+
+        </ul>
+        <code>printf("Hello world");</code>
+      </section>
+    </main>
+   
+  </body>
+</html>
